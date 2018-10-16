@@ -1,0 +1,10 @@
+image: golang:1.11-alpine
+buildTool: go 
+branches:
+  - master
+env:
+  - "MYLANG=go"
+stages:
+  - name: Build
+    script:
+      - go build helloworld.go
